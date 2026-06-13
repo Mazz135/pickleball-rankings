@@ -102,7 +102,7 @@ dinking:92,
 spiking:84,
 placement:94,
 defense:88,
-Athleticism:96,
+athleticism:96,
 consistency:84
 },
 {
@@ -113,7 +113,7 @@ dinking:84,
 spiking:95,
 placement:89,
 defense:86,
-Athleticism:91,
+athleticism:91,
 consistency:87
 },
 {
@@ -124,7 +124,7 @@ dinking:92,
 spiking:78,
 placement:85,
 defense:96,
-Athleticism:91,
+athleticism:91,
 consistency:93
 },
 {
@@ -135,7 +135,7 @@ dinking:91,
 spiking:76,
 placement:89,
 defense:88,
-Athleticism:67,
+athleticism:67,
 consistency:84
 },
 {
@@ -146,7 +146,7 @@ dinking:89,
 spiking:82,
 placement:67,
 defense:92,
-Athleticism:95,
+athleticism:95,
 consistency:97
 },
 {
@@ -157,7 +157,7 @@ dinking:85,
 spiking:97,
 placement:83,
 defense:78,
-Athleticism:82,
+athleticism:82,
 consistency:89
 },
 {
@@ -168,7 +168,7 @@ dinking:86,
 spiking:74,
 placement:70,
 defense:85,
-Athleticism:84,
+athleticism:84,
 consistency:72
 },
 {
@@ -179,7 +179,7 @@ dinking:50,
 spiking:50,
 placement:52,
 defense:50,
-Athleticism:65,
+athleticism:65,
 consistency:83
 },
 {
@@ -190,7 +190,7 @@ dinking:93,
 spiking:95,
 placement:96,
 defense:95,
-Athleticism:93,
+athleticism:93,
 consistency:94
 }
 ];
@@ -203,7 +203,7 @@ function overall(player){
         player.spiking +
         player.placement +
         player.defense +
-        player.Athleticism +
+        player.athleticism +
         player.consistency;
 
     return Math.round(total/8);
@@ -228,10 +228,10 @@ function renderPlayers(){
                 <div class="stat"><span>Serve</span><span>${player.serve}</span></div>
                 <div class="stat"><span>Power</span><span>${player.power}</span></div>
                 <div class="stat"><span>Dinking</span><span>${player.dinking}</span></div>
-                <div class="stat"><span>spiking</span><span>${player.volleys}</span></div>
+                <div class="stat"><span>Spiking</span><span>${player.spiking}</span></div>
                 <div class="stat"><span>Placement</span><span>${player.placement}</span></div>
                 <div class="stat"><span>Defense</span><span>${player.defense}</span></div>
-                <div class="stat"><span>Athleticism</span><span>${player.speed}</span></div>
+                <div class="stat"><span>Athleticism</span><span>${player.athleticism}</span></div>
                 <div class="stat"><span>Consistency</span><span>${player.consistency}</span></div>
             </div>
         </div>
